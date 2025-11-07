@@ -222,7 +222,7 @@
 					)
 				)
 			)
-			(pin input line
+			(pin bidirectional line
 				(at 1.27 -13.97 0)
 				(length 2.54)
 				(name "SDA"
@@ -312,7 +312,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 21.59 -7.62 180)
 				(length 2.54)
 				(name "SDOAG"
@@ -330,7 +330,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 21.59 -10.16 180)
 				(length 2.54)
 				(name "SDOM"
@@ -348,7 +348,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at 21.59 -15.24 180)
 				(length 2.54)
 				(name "DEN"
