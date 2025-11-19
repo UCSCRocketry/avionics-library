@@ -143,15 +143,15 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -9.652 26.416 0)
+			(at -5.842 9.906 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" ""
-			(at 0 0 0)
+		(property "Value" "MS5611"
+			(at 2.032 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -159,7 +159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 0 0 0)
+			(at 3.81 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -168,7 +168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 3.81 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -177,7 +177,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 3.81 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -187,7 +187,7 @@
 		)
 		(symbol "MS5611_0_0"
 			(pin power_in line
-				(at 5.08 24.13 180)
+				(at -8.89 6.35 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -204,26 +204,8 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 5.08 19.05 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at 5.08 6.35 180)
+				(at -8.89 -1.27 0)
 				(length 2.54)
 				(name "SDO"
 					(effects
@@ -241,7 +223,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 5.08 3.81 180)
+				(at -8.89 -3.81 0)
 				(length 2.54)
 				(name "SDA/SDI"
 					(effects
@@ -261,8 +243,8 @@
 		)
 		(symbol "MS5611_0_1"
 			(rectangle
-				(start -10.16 25.4)
-				(end 2.54 0)
+				(start -6.35 8.89)
+				(end 6.35 -8.89)
 				(stroke
 					(width 0)
 					(type default)
@@ -274,25 +256,7 @@
 		)
 		(symbol "MS5611_1_0"
 			(pin input line
-				(at 5.08 21.59 180)
-				(length 2.54)
-				(name "PS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 5.08 12.7 180)
+				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "CSB"
 					(effects
@@ -310,7 +274,7 @@
 				)
 			)
 			(pin input clock
-				(at 5.08 1.27 180)
+				(at -8.89 -6.35 0)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -327,13 +291,39 @@
 					)
 				)
 			)
-		)
-		(symbol "MS5611_1_1"
-			(text "MS5611"
-				(at -6.604 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(pin input line
+				(at 8.89 6.35 180)
+				(length 2.54)
+				(name "PS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 -6.35 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
