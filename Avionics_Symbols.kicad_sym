@@ -504,24 +504,6 @@
 			)
 		)
 		(symbol "MPM3610_0_0"
-			(pin power_in line
-				(at -7.62 1.27 0)
-				(length 2.54)
-				(name "VIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at -7.62 -1.27 0)
 				(length 2.54)
@@ -558,10 +540,25 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 7.62 -1.27 180)
+		)
+		(symbol "MPM3610_0_1"
+			(rectangle
+				(start -5.08 3.81)
+				(end 5.08 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MPM3610_1_0"
+			(pin power_in line
+				(at -7.62 1.27 0)
 				(length 2.54)
-				(name "GND"
+				(name "VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -576,17 +573,22 @@
 					)
 				)
 			)
-		)
-		(symbol "MPM3610_0_1"
-			(rectangle
-				(start -5.08 3.81)
-				(end 5.08 -3.81)
-				(stroke
-					(width 0)
-					(type default)
+			(pin power_out line
+				(at 7.62 -1.27 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
-				(fill
-					(type background)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
