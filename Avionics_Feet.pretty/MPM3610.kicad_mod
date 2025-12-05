@@ -61,17 +61,6 @@
 		(layer "F.SilkS")
 		(uuid "d164b680-7a2a-4a36-983a-a43fbf3a20d9")
 	)
-	(fp_rect
-		(start -2.54 -14.732)
-		(end 2.54 -9.652)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill no)
-		(layer "Margin")
-		(uuid "4a8256fa-561e-41ca-a329-c39e3d377877")
-	)
 	(fp_line
 		(start -4.66 -1.25)
 		(end 4.66 -1.25)
