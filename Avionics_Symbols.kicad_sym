@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.922 11.938 0)
+			(at -7.112 14.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "HopeRFM69W"
-			(at 3.81 12.192 0)
+			(at -1.524 12.446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,97 +51,7 @@
 		)
 		(symbol "HopeRFM69W_0_0"
 			(pin input line
-				(at -13.97 3.81 0)
-				(length 2.54)
-				(name "RST"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -13.97 1.27 0)
-				(length 2.54)
-				(name "CS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -13.97 -1.27 0)
-				(length 2.54)
-				(name "MOSI"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -13.97 -3.81 0)
-				(length 2.54)
-				(name "MISO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input clock
-				(at -13.97 -6.35 0)
-				(length 2.54)
-				(name "SCK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -13.97 -8.89 0)
+				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "EN"
 					(effects
@@ -158,10 +68,82 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 12.7 7.62 180)
+			(pin input clock
+				(at -10.16 1.27 0)
 				(length 2.54)
-				(name "G0"
+				(name "SCK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -10.16 -1.27 0)
+				(length 2.54)
+				(name "MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -3.81 0)
+				(length 2.54)
+				(name "MOSI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -6.35 0)
+				(length 2.54)
+				(name "CS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -8.89 0)
+				(length 2.54)
+				(name "RST"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -177,7 +159,25 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 5.08 180)
+				(at 8.89 7.62 180)
+				(length 2.54)
+				(name "G0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 5.08 180)
 				(length 2.54)
 				(name "G1"
 					(effects
@@ -186,7 +186,7 @@
 						)
 					)
 				)
-				(number "10"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -195,7 +195,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 2.54 180)
+				(at 8.89 2.54 180)
 				(length 2.54)
 				(name "G2"
 					(effects
@@ -204,7 +204,7 @@
 						)
 					)
 				)
-				(number "11"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -213,7 +213,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 0 180)
+				(at 8.89 0 180)
 				(length 2.54)
 				(name "G3"
 					(effects
@@ -231,7 +231,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -2.54 180)
+				(at 8.89 -2.54 180)
 				(length 2.54)
 				(name "G4"
 					(effects
@@ -240,7 +240,7 @@
 						)
 					)
 				)
-				(number "13"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -249,7 +249,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -5.08 180)
+				(at 8.89 -5.08 180)
 				(length 2.54)
 				(name "G5"
 					(effects
@@ -258,7 +258,7 @@
 						)
 					)
 				)
-				(number "14"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -267,7 +267,7 @@
 				)
 			)
 			(pin power_in line
-				(at 12.7 -8.89 180)
+				(at 8.89 -8.89 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -287,7 +287,7 @@
 		)
 		(symbol "HopeRFM69W_1_0"
 			(pin power_in line
-				(at -13.97 7.62 0)
+				(at -10.16 8.89 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -307,8 +307,8 @@
 		)
 		(symbol "HopeRFM69W_1_1"
 			(rectangle
-				(start -11.43 10.16)
-				(end 10.16 -11.43)
+				(start -7.62 11.43)
+				(end 6.35 -11.43)
 				(stroke
 					(width 0)
 					(type solid)
@@ -532,7 +532,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -565,7 +565,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1132,25 +1132,7 @@
 			)
 		)
 		(symbol "MS5611_0_0"
-			(pin power_in line
-				(at -8.89 6.35 0)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
+			(pin input line
 				(at -8.89 1.27 0)
 				(length 2.54)
 				(name "SDA/SDI"
@@ -1160,25 +1142,7 @@
 						)
 					)
 				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -8.89 -1.27 0)
-				(length 2.54)
-				(name "SDO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1201,6 +1165,42 @@
 			)
 		)
 		(symbol "MS5611_1_0"
+			(pin power_in line
+				(at -8.89 6.35 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 -1.27 0)
+				(length 2.54)
+				(name "SDO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input clock
 				(at -8.89 -3.81 0)
 				(length 2.54)
@@ -1211,7 +1211,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1229,7 +1229,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1247,7 +1247,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1265,7 +1265,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2962,7 +2962,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.636 11.684 0)
+			(at -6.604 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2970,7 +2970,7 @@
 			)
 		)
 		(property "Value" "Micro-SD"
-			(at 4.318 11.938 0)
+			(at 3.048 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,10 +3005,28 @@
 			)
 		)
 		(symbol "microsd_0_0"
-			(pin input line
-				(at -12.7 3.81 0)
+			(pin input clock
+				(at -10.16 3.81 0)
 				(length 2.54)
 				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 1.27 0)
+				(length 2.54)
+				(name "SO/D0"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3024,63 +3042,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 1.27 0)
-				(length 2.54)
-				(name "SO/D0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -12.7 -1.27 0)
+				(at -10.16 -1.27 0)
 				(length 2.54)
 				(name "D1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -12.7 -3.81 0)
-				(length 2.54)
-				(name "DAT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -12.7 -6.35 0)
-				(length 2.54)
-				(name "CS/D3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3096,9 +3060,27 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -8.89 0)
+				(at -10.16 -3.81 0)
 				(length 2.54)
-				(name "SI/CMD"
+				(name "DAT2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -10.16 -6.35 0)
+				(length 2.54)
+				(name "CS/D3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3113,8 +3095,26 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 11.43 7.62 180)
+			(pin bidirectional line
+				(at -10.16 -8.89 0)
+				(length 2.54)
+				(name "SI/CMD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 7.62 180)
 				(length 2.54)
 				(name "DET"
 					(effects
@@ -3123,7 +3123,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3132,7 +3132,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -8.89 180)
+				(at 10.16 -8.89 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -3152,8 +3152,8 @@
 		)
 		(symbol "microsd_0_1"
 			(rectangle
-				(start -10.16 10.16)
-				(end 8.89 -11.43)
+				(start -7.62 10.16)
+				(end 7.62 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -3165,7 +3165,7 @@
 		)
 		(symbol "microsd_1_0"
 			(pin input line
-				(at -12.7 7.62 0)
+				(at -10.16 7.62 0)
 				(length 2.54)
 				(name "3V"
 					(effects
@@ -3233,46 +3233,10 @@
 			)
 		)
 		(symbol "neopixel_0_0"
-			(pin input line
-				(at -8.89 -2.54 0)
-				(length 2.54)
-				(name "DIN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 8.89 1.27 180)
-				(length 2.54)
-				(name "DOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 8.89 -2.54 180)
+				(at -8.89 1.27 0)
 				(length 2.54)
-				(name "VSS"
+				(name "5V"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3287,12 +3251,67 @@
 					)
 				)
 			)
+			(pin input line
+				(at -8.89 -1.27 0)
+				(length 2.54)
+				(name "DIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "neopixel_1_0"
 			(pin power_in line
 				(at -8.89 1.27 0)
 				(length 2.54)
-				(name "VDD"
+				(hide yes)
+				(name "5V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 1.27 180)
+				(length 2.54)
+				(name "DOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3307,11 +3326,68 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(symbol "neopixel_1_1"
 			(rectangle
 				(start -6.35 4.445)
-				(end 6.35 -5.08)
+				(end 6.35 -3.81)
 				(stroke
 					(width 0)
 					(type solid)
@@ -3381,7 +3457,7 @@
 						)
 					)
 				)
-				(number "38"
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3399,7 +3475,7 @@
 						)
 					)
 				)
-				(number "20"
+				(number "40"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3417,7 +3493,7 @@
 						)
 					)
 				)
-				(number "18"
+				(number "38"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3435,7 +3511,7 @@
 						)
 					)
 				)
-				(number "40"
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3453,7 +3529,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3471,7 +3547,7 @@
 						)
 					)
 				)
-				(number "21"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3489,7 +3565,7 @@
 						)
 					)
 				)
-				(number "22"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3507,7 +3583,7 @@
 						)
 					)
 				)
-				(number "23"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3525,7 +3601,7 @@
 						)
 					)
 				)
-				(number "24"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3543,7 +3619,7 @@
 						)
 					)
 				)
-				(number "25"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3561,7 +3637,7 @@
 						)
 					)
 				)
-				(number "26"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3579,7 +3655,7 @@
 						)
 					)
 				)
-				(number "27"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3597,7 +3673,7 @@
 						)
 					)
 				)
-				(number "28"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3615,7 +3691,7 @@
 						)
 					)
 				)
-				(number "29"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3633,7 +3709,7 @@
 						)
 					)
 				)
-				(number "30"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3651,7 +3727,7 @@
 						)
 					)
 				)
-				(number "31"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3669,7 +3745,7 @@
 						)
 					)
 				)
-				(number "32"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3687,7 +3763,7 @@
 						)
 					)
 				)
-				(number "33"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3705,7 +3781,7 @@
 						)
 					)
 				)
-				(number "34"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3723,7 +3799,7 @@
 						)
 					)
 				)
-				(number "35"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3741,7 +3817,7 @@
 						)
 					)
 				)
-				(number "36"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3759,7 +3835,7 @@
 						)
 					)
 				)
-				(number "37"
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3777,7 +3853,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3795,7 +3871,7 @@
 						)
 					)
 				)
-				(number "17"
+				(number "37"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3813,7 +3889,7 @@
 						)
 					)
 				)
-				(number "16"
+				(number "36"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3831,7 +3907,7 @@
 						)
 					)
 				)
-				(number "15"
+				(number "35"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3849,7 +3925,7 @@
 						)
 					)
 				)
-				(number "14"
+				(number "34"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3867,7 +3943,7 @@
 						)
 					)
 				)
-				(number "13"
+				(number "33"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3885,7 +3961,7 @@
 						)
 					)
 				)
-				(number "12"
+				(number "32"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3903,7 +3979,7 @@
 						)
 					)
 				)
-				(number "11"
+				(number "31"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3921,7 +3997,7 @@
 						)
 					)
 				)
-				(number "10"
+				(number "30"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3939,7 +4015,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "29"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3957,7 +4033,7 @@
 						)
 					)
 				)
-				(number "8"
+				(number "28"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3975,7 +4051,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "27"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3993,7 +4069,7 @@
 						)
 					)
 				)
-				(number "6"
+				(number "26"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4011,7 +4087,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4029,7 +4105,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "23"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4047,7 +4123,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4065,7 +4141,7 @@
 						)
 					)
 				)
-				(number "19"
+				(number "39"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4083,7 +4159,7 @@
 						)
 					)
 				)
-				(number "39"
+				(number "19"
 					(effects
 						(font
 							(size 1.27 1.27)
