@@ -507,25 +507,7 @@
 					)
 				)
 			)
-			(pin input line
-				(at 10.16 2.54 180)
-				(length 2.54)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
+			(pin power_in line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "VBUS"
@@ -543,7 +525,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "GND"
@@ -590,6 +572,24 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "IN-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 		)
@@ -948,237 +948,9 @@
 			)
 		)
 		(symbol "MPM3610GQV-P_0_1"
-			(polyline
-				(pts
-					(xy 7.62 5.08) (xy 7.62 -27.94)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -27.94) (xy 33.02 -27.94)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 33.02 5.08) (xy 7.62 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 33.02 -27.94) (xy 33.02 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin unspecified line
-				(at 0 0 0)
-				(length 7.62)
-				(name "FB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -2.54 0)
-				(length 7.62)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 0 -5.08 0)
-				(length 7.62)
-				(name "AGND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -7.62 0)
-				(length 7.62)
-				(name "SW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -10.16 0)
-				(length 7.62)
-				(name "SW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -12.7 0)
-				(length 7.62)
-				(name "SW"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -15.24 0)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -17.78 0)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 0 -20.32 0)
-				(length 7.62)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
-				(at 0 -22.86 0)
-				(length 7.62)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 40.64 0 180)
-				(length 7.62)
+				(at 5.08 0 0)
+				(length 2.54)
 				(name "NC"
 					(effects
 						(font
@@ -1195,8 +967,8 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -2.54 180)
-				(length 7.62)
+				(at 5.08 -2.54 0)
+				(length 2.54)
 				(name "NC"
 					(effects
 						(font
@@ -1212,9 +984,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 40.64 -5.08 180)
-				(length 7.62)
+			(pin output line
+				(at 5.08 -5.08 0)
+				(length 2.54)
 				(name "AAM"
 					(effects
 						(font
@@ -1230,9 +1002,9 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 40.64 -7.62 180)
-				(length 7.62)
+			(pin input line
+				(at 5.08 -7.62 0)
+				(length 2.54)
 				(name "EN"
 					(effects
 						(font
@@ -1249,8 +1021,8 @@
 				)
 			)
 			(pin power_in line
-				(at 40.64 -10.16 180)
-				(length 7.62)
+				(at 5.08 -10.16 0)
+				(length 2.54)
 				(name "IN"
 					(effects
 						(font
@@ -1267,8 +1039,8 @@
 				)
 			)
 			(pin no_connect line
-				(at 40.64 -12.7 180)
-				(length 7.62)
+				(at 5.08 -12.7 0)
+				(length 2.54)
 				(name "NC"
 					(effects
 						(font
@@ -1284,9 +1056,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 40.64 -15.24 180)
-				(length 7.62)
+			(pin power_in line
+				(at 5.08 -15.24 0)
+				(length 2.54)
 				(name "PGND"
 					(effects
 						(font
@@ -1302,9 +1074,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 40.64 -17.78 180)
-				(length 7.62)
+			(pin power_in line
+				(at 5.08 -17.78 0)
+				(length 2.54)
 				(name "PGND"
 					(effects
 						(font
@@ -1320,9 +1092,9 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 40.64 -20.32 180)
-				(length 7.62)
+			(pin power_in line
+				(at 5.08 -20.32 0)
+				(length 2.54)
 				(name "PGND"
 					(effects
 						(font
@@ -1339,8 +1111,8 @@
 				)
 			)
 			(pin unspecified line
-				(at 40.64 -22.86 180)
-				(length 7.62)
+				(at 5.08 -22.86 0)
+				(length 2.54)
 				(name "BST"
 					(effects
 						(font
@@ -1354,6 +1126,199 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+			(pin input line
+				(at 35.56 0 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 35.56 -2.54 180)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 35.56 -5.08 180)
+				(length 2.54)
+				(name "AGND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 35.56 -7.62 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 35.56 -10.16 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 35.56 -12.7 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 35.56 -15.24 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 35.56 -17.78 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at 35.56 -20.32 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 35.56 -22.86 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "MPM3610GQV-P_1_1"
+			(rectangle
+				(start 33.02 2.54)
+				(end 7.62 -25.4)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
 				)
 			)
 		)
@@ -3257,7 +3222,7 @@
 			)
 		)
 		(symbol "kx13x_0_0"
-			(pin power_out line
+			(pin power_in line
 				(at -11.43 6.35 0)
 				(length 2.54)
 				(name "VDD"
@@ -3765,25 +3730,7 @@
 			)
 		)
 		(symbol "lsm9ds1_0_0"
-			(pin output line
-				(at 1.27 -29.21 0)
-				(length 2.54)
-				(name "SDOAG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
+			(pin unspecified line
 				(at 1.27 -31.75 0)
 				(length 2.54)
 				(name "SDOM"
@@ -3793,7 +3740,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3804,7 +3751,7 @@
 			(pin input line
 				(at 1.27 -34.29 0)
 				(length 2.54)
-				(name "SCL"
+				(name "SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3829,7 +3776,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3847,7 +3794,7 @@
 						)
 					)
 				)
-				(number "6"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3873,7 +3820,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin input line
 				(at 24.13 -11.43 180)
 				(length 2.54)
 				(name "DEN"
@@ -3960,7 +3907,7 @@
 			)
 		)
 		(symbol "lsm9ds1_1_0"
-			(pin power_out line
+			(pin power_in line
 				(at 1.27 -7.62 0)
 				(length 2.54)
 				(name "VDD_IO"
@@ -3978,7 +3925,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 1.27 -10.16 0)
 				(length 2.54)
 				(name "VDD_IO"
@@ -4050,7 +3997,25 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin unspecified line
+				(at 1.27 -29.21 0)
+				(length 2.54)
+				(name "SDOAG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
 				(at 24.13 -21.59 180)
 				(length 2.54)
 				(name "C1"
@@ -4068,7 +4033,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at 24.13 -26.67 180)
 				(length 2.54)
 				(name "CAP"
