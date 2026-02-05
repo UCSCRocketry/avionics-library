@@ -3765,24 +3765,6 @@
 			)
 		)
 		(symbol "lsm9ds1_0_0"
-			(pin power_out line
-				(at 1.27 -10.16 0)
-				(length 2.54)
-				(name "3V3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin output line
 				(at 1.27 -29.21 0)
 				(length 2.54)
@@ -3981,7 +3963,7 @@
 			(pin power_out line
 				(at 1.27 -7.62 0)
 				(length 2.54)
-				(name "VIN"
+				(name "VDD_IO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3989,6 +3971,24 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 1.27 -10.16 0)
+				(length 2.54)
+				(name "VDD_IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
