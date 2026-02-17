@@ -1808,7 +1808,7 @@
 						)
 					)
 				)
-				(number "G1"
+				(number "SHIELD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1827,7 +1827,7 @@
 						)
 					)
 				)
-				(number "G2"
+				(number "SHIELD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1846,7 +1846,7 @@
 						)
 					)
 				)
-				(number "G3"
+				(number "SHIELD"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1865,7 +1865,7 @@
 						)
 					)
 				)
-				(number "G4"
+				(number "SHIELD"
 					(effects
 						(font
 							(size 1.27 1.27)
