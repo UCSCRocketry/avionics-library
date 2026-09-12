@@ -6,6 +6,7 @@ KiCad symbol and footprint libraries for UCSC Rocketry avionics.
 - `Avionics_Feet.pretty/` — footprint library (`.kicad_mod` files)
 - `Models/` — 3D step models
 - `tools/kicad_lib_merge.py` — merge tooling (stdlib only)
+- `tools/add_component.py` — add one component (symbol + footprint + 3D model) with validation, one commit
 
 ## Use in KiCad
 
@@ -55,3 +56,55 @@ Verify before continuing:
 python3 tools/kicad_lib_merge.py list Avionics_Symbols.kicad_sym
 git diff --check
 ```
+
+## tools/add_component.py
+
+Adds one component per commit: a symbol, a footprint, and a 3D model.
+The symbol is inserted alphabetically into `Avionics_Symbols.kicad_sym`,
+the footprint is copied to `Avionics_Feet.pretty/<name>.kicad_mod`, the
+model is copied to `Models/`, then all three are committed together.
+
+Required checks, all must pass:
+
+- Symbol name matches `A-Za-z0-9 _ - . +`, starts alnum, max 64 chars,
+  and does not already exist in the library.
+- Symbol has `Reference`, `Value`, `Footprint`, `LCSC Part #`,
+  `Datasheet`, and `Description` properties.
+- `LCSC Part #` matches `C` + 5-9 digits (e.g. `C367054`).
+- `Footprint` is `Avionics_Feet:<name>` and matches the footprint file,
+  whose `(footprint ...)` header matches its filename, whose `Reference`
+  is `REF**`, and whose `Value` equals the footprint name.
+
+On detection, the tool auto-fixes: missing/empty symbol properties are
+filled with defaults (`Reference` → `U`, `Value` → symbol name,
+`Footprint` → `Avionics_Feet:<name>`, etc.), the footprint
+`Reference` is set to `REF**`, and the footprint `Value` is set to
+the footprint name. Truly unfixable issues (bad symbol name, invalid
+`LCSC Part #`, unbalanced parentheses, no pins, duplicate component)
+abort before anything is written.
+- Footprint file ends in `.kicad_mod`; 3D model ends in `.step`/`.stp`.
+- Parentheses balance; every pin has a name and number; pin numbers are
+  unique within each unit; the symbol has at least one pin.
+
+```sh
+python3 tools/add_component.py \
+  --symbol-file NEW.sym [--symbol NAME] \
+  --footprint-file NEW.kicad_mod [--footprint FP_NAME] \
+  --model-file MODEL.step [--model MODEL_NAME] \
+  --lcsc C1234567 \
+  [--datasheet URL] [--description TEXT] [--reference U] \
+  [--message "Add NAME"] [--check-only] [--no-commit] [--allow-dirty] [--force] \
+  [--edit] [--editor EDITOR]
+```
+
+`--edit` opens the new symbol block in `$EDITOR` (or `--editor`, default
+`vi`) before anything is written. Edits are re-validated; on errors you
+can re-edit or abort, and the tree is left untouched on abort. The edited
+block must still be exactly the same symbol name.
+
+`--symbol-file` accepts a full `.kicad_sym` library (picks `--symbol`,
+or the single symbol it contains) or a raw `(symbol ...)` snippet.
+`--lcsc`, `--footprint`, `--datasheet`, `--description`, `--reference`
+patch the symbol when given. `--check-only` validates without changing
+anything. Default is to commit immediately (`Add NAME`); `--no-commit`
+stages only. Unrelated dirty files abort the commit unless `--allow-dirty`.

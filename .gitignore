@@ -38,3 +38,7 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# Python tooling
+__pycache__/
+*.pyc

@@ -3839,7 +3839,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C367054"
+		(property "LCSC Part #" "C367054"
 			(at 0 0 0)
 			(effects
 				(font
