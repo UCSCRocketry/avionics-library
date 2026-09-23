@@ -1,0 +1,37 @@
+name: Update project library snapshots
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - Avionics_Symbols.kicad_sym
+      - Avionics_Feet.pretty/**
+      - Models/**
+
+concurrency:
+  group: avionics-project-library-updates
+  cancel-in-progress: false
+
+jobs:
+  update-projects:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Test synchronization tooling
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate canonical library
+        run: python3 tools/validate_library.py
+      - name: Open project update pull requests
+        env:
+          AVIONICS_SYNC_TOKEN: ${{ secrets.AVIONICS_SYNC_TOKEN }}
+        run: python3 tools/sync_projects.py

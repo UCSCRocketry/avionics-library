@@ -1,0 +1,4 @@
+*.kicad_mod text eol=lf
+*.kicad_sym text eol=lf
+*.step binary
+*.stp binary

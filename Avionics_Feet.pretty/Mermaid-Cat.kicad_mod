@@ -1,4 +1,4 @@
-(footprint "LOGO" (version 20221018) (generator "bitmap2component") (generator_version "9.0")
+(footprint "Mermaid-Cat" (version 20221018) (generator "bitmap2component") (generator_version "9.0")
   (layer "F.Cu")
   (attr board_only exclude_from_pos_files exclude_from_bom)
   (fp_text reference "G***" (at 0 0) (layer "F.SilkS")

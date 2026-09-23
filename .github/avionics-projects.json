@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "projects": [
+    {
+      "repository": "UCSCRocketry/blaze-nt-hardware",
+      "branch": "main",
+      "destination": "Libraries/Avionics",
+      "base_ref": "57e97cd1649ff8ddca48141f310e44388516c665"
+    },
+    {
+      "repository": "UCSCRocketry/Blaze-Baro",
+      "branch": "main",
+      "destination": "Libraries/Avionics",
+      "base_ref": "811474f3eddfb246aa01f3e501f0fe1f429e4165"
+    },
+    {
+      "repository": "UCSCRocketry/flame26",
+      "branch": "main",
+      "destination": "Libraries/Avionics",
+      "base_ref": "367c7625b2ac56efbe3850dc4fa0f5855a8b84e3"
+    }
+  ]
+}

@@ -620,7 +620,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "LBAA0QB1SJ-296:MODULE_LBAA0QB1SJ-296"
+		(property "Footprint" "Avionics_Feet:MODULE_LBAA0QB1SJ-296"
 			(at 0 0 0)
 			(effects
 				(font
