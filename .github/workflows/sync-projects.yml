@@ -10,6 +10,10 @@ on:
       - Avionics_Symbols.kicad_sym
       - Avionics_Feet.pretty/**
       - Models/**
+      - .github/avionics-projects.json
+      - tools/kicad_lib_merge.py
+      - tools/sync_projects.py
+      - tools/vendor_library.py
 
 concurrency:
   group: avionics-project-library-updates

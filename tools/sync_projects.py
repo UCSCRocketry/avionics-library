@@ -284,7 +284,10 @@ def main():
             return
         environment = gh_environment()
         run(["gh", "auth", "setup-git"], env=environment)
-        source_commit = vendor_library.resolve_ref(ROOT, args.source_ref)
+        if args.source_ref == "HEAD":
+            source_commit = vendor_library.latest_snapshot_commit(ROOT)
+        else:
+            source_commit = vendor_library.resolve_ref(ROOT, args.source_ref)
         results = []
         for project in projects:
             try:

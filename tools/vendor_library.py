@@ -44,6 +44,14 @@ def resolve_ref(repo, ref):
                text=True).strip()
 
 
+def latest_snapshot_commit(repo, ref="HEAD"):
+    commit = git(repo, ["log", "-1", "--format=%H", ref, "--"] +
+                 list(MANAGED_ROOTS), text=True).strip()
+    if not commit:
+        raise VendorError(f"no managed library commit found from {ref}")
+    return commit
+
+
 def managed_path(path):
     return (path == SYMBOL_LIBRARY or
             (path.startswith(FOOTPRINT_DIRECTORY + "/") and

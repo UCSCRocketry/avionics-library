@@ -123,6 +123,12 @@ class VendorTests(unittest.TestCase):
         self.assertIn('(version 20241209)', text)
         self.assertEqual(result["modified_paths"], [])
 
+    def test_latest_snapshot_commit_ignores_tooling_only_commit(self):
+        (self.source / "README.md").write_text("tooling change")
+        self.commit("docs only")
+        self.assertEqual(vendor.latest_snapshot_commit(self.source),
+                         self.base_commit)
+
     def test_update_preserves_unmanaged_project_files(self):
         self.install()
         note = self.destination / "README.local"
