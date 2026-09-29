@@ -490,7 +490,7 @@ def main():
     model_base = a.model or os.path.basename(a.model_file)
     validate_model_name(model_base)
     model_reference = (a.model_reference or
-                       f"${{KIPRJMOD}}/Models/{model_base}")
+                       f"${{KIPRJMOD}}/avionics-library/Models/{model_base}")
 
     sym_name, block = load_symbol_block(a.symbol_file, a.symbol)
     if a.reference:

@@ -7,8 +7,6 @@ KiCad symbol and footprint libraries for UCSC Rocketry avionics.
 - `Models/` — 3D step models
 - `tools/kicad_lib_merge.py` — merge tooling (stdlib only)
 - `tools/add_component.py` — add one component (symbol + footprint + 3D model) with validation, one commit
-- `tools/vendor_library.py` — safely install or update a project-local snapshot
-- `tools/sync_projects.py` — open automated update and contribution PRs
 
 ## Use in KiCad
 
@@ -69,7 +67,9 @@ Adds one component per commit: a symbol, a footprint, and a 3D model.
 The symbol is inserted alphabetically into `Avionics_Symbols.kicad_sym`,
 the footprint is copied to `Avionics_Feet.pretty/<name>.kicad_mod`, and the
 model is copied to `Models/`. The footprint's model reference defaults to
-`${KIPRJMOD}/Models/<model>` and can be overridden with `--model-reference`.
+`${KIPRJMOD}/avionics-library/Models/<model>` so it resolves from every project
+that uses the standard submodule path. It can be overridden with
+`--model-reference`.
 All three files are then staged or committed together.
 
 Required checks, all must pass:
@@ -137,14 +137,75 @@ checks symbol-library structure and uniqueness, footprint syntax and names,
 and symbol-to-footprint references. Legacy external footprint references and
 unlinked existing models are reported as warnings.
 
-## Project snapshots
+## Contribution workflow
 
-Avionics projects can vendor a complete, versioned copy under
-`Libraries/Avionics`. GitHub Actions in this repository update registered
-projects through pull requests, preserve independent project-local edits, and
-submit those edits back here for maintainer review. Students continue using a
-normal one-repository GitHub Desktop workflow.
+`avionics-library` is the canonical source for shared symbols, footprints, and
+3D models. Do not edit the library through a project repository's submodule.
 
-See [`docs/VENDORED_LIBRARIES.md`](docs/VENDORED_LIBRARIES.md) for project
-registration, credentials, migration, conflict behavior, and maintainer
-commands.
+To add a part:
+
+1. Clone this repository and create a feature branch.
+2. Run `tools/add_component.py` to add exactly one symbol, footprint, and 3D
+   model in one commit.
+3. Push the branch and open a pull request against `main`.
+4. A library lead reviews the part and merges the pull request after the
+   Python tests and validator pass.
+
+Example:
+
+```sh
+python3 tools/add_component.py \
+  --symbol-file NEW.sym \
+  --footprint-file NEW.kicad_mod \
+  --model-file MODEL.step \
+  --lcsc C1234567 \
+  --datasheet https://example.com/datasheet.pdf \
+  --description "Part description"
+
+python3 -m unittest discover -s tests -v
+python3 tools/validate_library.py
+```
+
+Leads can use `tools/kicad_lib_merge.py resolve` when a pull request conflicts
+with another symbol-library change. Conflict resolution must be followed by
+the full test and validation commands above.
+
+## Use as a project submodule
+
+Every avionics electrical project should pin this repository at
+`avionics-library`:
+
+```sh
+git submodule add https://github.com/UCSCRocketry/avionics-library.git avionics-library
+git commit -m "Add avionics library submodule"
+```
+
+Clone projects with their library:
+
+```sh
+git clone --recurse-submodules https://github.com/UCSCRocketry/PROJECT.git
+```
+
+For an existing clone:
+
+```sh
+git submodule update --init --recursive
+```
+
+Project KiCad library tables should use project-relative paths:
+
+```scheme
+(lib (name "Avionics_Symbols")(type "KiCad")(uri "${KIPRJMOD}/avionics-library/Avionics_Symbols.kicad_sym")(options "")(descr ""))
+```
+
+```scheme
+(lib (name "Avionics_Feet")(type "KiCad")(uri "${KIPRJMOD}/avionics-library/Avionics_Feet.pretty")(options "")(descr ""))
+```
+
+When a project needs a newer library version, update only its pinned commit:
+
+```sh
+git submodule update --remote avionics-library
+git add avionics-library
+git commit -m "Update avionics library"
+```
