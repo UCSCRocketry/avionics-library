@@ -50,7 +50,7 @@
 				)
 			)
 		)
-		(property "Description" "E22-400MM22S SX1268 433/470MHz ultra-small LoRa SMD module"
+		(property "Description" "Ebyte E22-400MM22S 410-493 MHz LoRa transceiver module"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -471,7 +471,7 @@
 				)
 			)
 		)
-		(property "Value" "HopeRFM69W_Breakout"
+		(property "Value" "RFM69HCW Breakout"
 			(at -1.524 12.446 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -481,7 +481,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:RFM69HCW"
 			(at -30.48 -30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -492,7 +492,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/3070/RFM69HCW-V1.1.pdf"
 			(at -30.48 -30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -503,7 +503,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RFM69HCW 433 MHz radio transceiver breakout"
 			(at -30.48 -30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -512,6 +512,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "HopeRFM69W_Breakout_0_0"
@@ -814,7 +823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "VSSOP10_DGS_TEX"
+		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
 			(at 20.066 15.748 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -826,7 +835,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/ina229-q1"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina229-q1.pdf"
 			(at 18.796 13.208 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -838,7 +847,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "85 V, 20-bit current, voltage, power, energy and charge monitor with SPI"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -879,6 +888,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C2870151"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "INA229AQDGSRQ1_0_1"
@@ -1121,7 +1139,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/Murata_7-28-2023_SimpleDatasheet-1SJ-296.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1132,7 +1150,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Murata Type 1SJ LoRaWAN module with STM32L0 and SX1262"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1189,6 +1207,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "LCSC Part #" "C6651361"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "LBAA0QB1SJ-296_0_0"
@@ -2252,7 +2279,7 @@
 				)
 			)
 		)
-		(property "Value" "MP2307_Breakout"
+		(property "Value" "MP2307 Breakout"
 			(at 2.286 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2262,7 +2289,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:MP2307"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2273,7 +2300,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2307/document_id/113"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2284,7 +2311,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MP2307-based adjustable step-down converter breakout"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2293,6 +2320,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "MP2307_Breakout_0_0"
@@ -2413,7 +2449,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:MPM3610QGV-P"
 			(at 24.892 16.764 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2425,7 +2461,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPM3610/document_id/2090"
 			(at 48.006 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2437,7 +2473,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "21 V, 1.2 A synchronous step-down power module"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2478,6 +2514,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C5183856"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "MPM3610GQV-P_0_1"
@@ -2873,7 +2918,7 @@
 				)
 			)
 		)
-		(property "Value" "MPM3610_Breakout"
+		(property "Value" "MPM3610 Breakout"
 			(at -0.508 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2883,7 +2928,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:MPM3610"
 			(at 1.27 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2894,7 +2939,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPM3610/document_id/2090"
 			(at 1.27 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2905,7 +2950,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MPM3610 5 V step-down converter breakout"
 			(at 1.27 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2914,6 +2959,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "MPM3610_Breakout_0_0"
@@ -3023,7 +3077,7 @@
 				)
 			)
 		)
-		(property "Value" "MS5611"
+		(property "Value" "MS5611-01BA03"
 			(at 2.032 10.668 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3033,7 +3087,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:XDCR_MS561101BA03-50"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3044,7 +3098,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111436_MS5611-01BA03_C37148.pdf"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3055,7 +3109,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "High-resolution barometric pressure sensor with I2C and SPI"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3064,6 +3118,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C37148"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "MS5611_0_0"
@@ -3246,7 +3309,7 @@
 				)
 			)
 		)
-		(property "Value" "MS5611"
+		(property "Value" "MS5611 Breakout"
 			(at 2.032 10.668 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3256,7 +3319,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:MS5611"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3267,7 +3330,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912111436_MS5611-01BA03_C37148.pdf"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3278,7 +3341,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MS5611 high-resolution barometric pressure sensor breakout"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3287,6 +3350,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "MS5611_Breakout_0_0"
@@ -3453,7 +3525,7 @@
 				)
 			)
 		)
-		(property "Value" "Micro_SD_Card"
+		(property "Value" "47219-2001"
 			(at 9.144 9.398 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3464,7 +3536,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Card:microSD_HC_Molex_47219-2001"
 			(at 29.21 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3475,7 +3547,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/472192001?display=pdf"
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/472192001_sd.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3486,7 +3558,7 @@
 				)
 			)
 		)
-		(property "Description" "Micro SD Card Socket"
+		(property "Description" "Molex 47219-2001 push-push microSD card connector"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3517,6 +3589,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C164170"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "Micro_SD_Card_1_0"
@@ -3772,7 +3853,7 @@
 				)
 			)
 		)
-		(property "Value" "Micro-SD"
+		(property "Value" "MicroSD Breakout"
 			(at 3.048 11.684 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3782,7 +3863,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:Micro_SD"
 			(at -15.24 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3793,7 +3874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://learn.adafruit.com/adafruit-micro-sd-breakout-board-card-tutorial"
 			(at -15.24 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3804,7 +3885,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MicroSD card breakout with SPI interface"
 			(at -15.24 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3813,6 +3894,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "Microsd_Breakout_0_0"
@@ -4012,7 +4102,7 @@
 				)
 			)
 		)
-		(property "Value" "PE4259"
+		(property "Value" "PE4259-63"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4033,7 +4123,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://psemi.com/pdf/datasheets/pe4259ds.pdf"
+		(property "Datasheet" "https://www.psemi.com/pdf/datasheets/pe4259ds.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4044,7 +4134,7 @@
 				)
 			)
 		)
-		(property "Description" "10 MHz to 3 GHz reflective SPDT RF switch, 1.8 V to 3.3 V, SC-70-6"
+		(property "Description" "Peregrine UltraCMOS RF switch, 10 MHz to 3.0 GHz, SC-70-6"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4207,7 +4297,7 @@
 				)
 			)
 		)
-		(property "Value" "SA8x8"
+		(property "Value" "SA818S-V"
 			(at 0 13.716 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4217,7 +4307,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:SA818S"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4228,7 +4318,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.nicerf.com/upload/20250814/d374728c4b5426c63631449da8745cc6.pdf?file_name=SA818S%201W%20Embedded%20walkie%20talkie%20module%20V1.7"
+		(property "Datasheet" "https://www.nicerf.com/wp-content/uploads/2023/03/SA818S-V1.0-Product-Specification.pdf"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4239,7 +4329,7 @@
 				)
 			)
 		)
-		(property "Description" "CE-RED Certified 1W Analog Walkie Talkie Module 3-5km Range"
+		(property "Description" "NiceRF SA818S-V embedded VHF walkie-talkie module"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4248,6 +4338,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C51897911"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "SA8x8_0_0"
@@ -4612,7 +4711,7 @@
 				)
 			)
 		)
-		(property "Value" "32.768KHz"
+		(property "Value" "SIT1532AI-J4-DCC-32.768D"
 			(at 7.112 6.858 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4633,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://abracon.com/Oscillators/ASCO.pdf"
+		(property "Datasheet" "https://www.sitime.com/datasheet/SiT1532"
 			(at -5.715 3.175 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4644,7 +4743,7 @@
 				)
 			)
 		)
-		(property "Description" "Crystal Clock Oscillator, Abracon ASCO"
+		(property "Description" "SiTime SiT1532 32.768 kHz ultra-low-power MEMS oscillator"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4655,7 +4754,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C367054"
+		(property "LCSC Part #" "C367053"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,7 +4893,7 @@
 				)
 			)
 		)
-		(property "Value" "STM32 猫"
+		(property "Value" "STM32F411 Black Pill"
 			(at 1.27 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4804,7 +4903,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:STM32F411"
 			(at 44.45 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4815,7 +4914,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://stm32-base.org/assets/pdf/regulators/AP7343.pdf"
+		(property "Datasheet" "https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html"
 			(at -0.254 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4826,7 +4925,7 @@
 				)
 			)
 		)
-		(property "Description" "https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html"
+		(property "Description" "WeAct STM32F411CEU6 Black Pill development board"
 			(at 1.524 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,6 +4934,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "SMT32F411_Blackpill_0_0"
@@ -5615,7 +5723,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "ST11S008V4HR2000"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C3177044.html"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5627,7 +5735,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "JAE ST11S008V4HR2000 push-push microSD connector, 1.25 mm profile"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6036,7 +6144,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DFN_QFN:QFN-12-1EP_3x3mm_P0.5mm_EP1.45x1.45mm"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6058,7 +6166,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mini-Circuits 50 MHz to 1 GHz low-noise MMIC amplifier"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6067,6 +6175,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C3190822"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "TSS-13HLN+_0_0"
@@ -6351,7 +6468,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle"
+		(property "Value" "USB4105-GF-A"
 			(at 0 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6361,7 +6478,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 3.81 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6372,7 +6489,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://gct.co/files/drawings/usb4105.pdf"
 			(at 3.81 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6383,7 +6500,7 @@
 				)
 			)
 		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+		(property "Description" "GCT USB4105 USB Type-C receptacle, USB 2.0, 16 contacts"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6414,6 +6531,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C3020560"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "USB_C_Receptacle_USB2.0_14P_5V_0_0"
@@ -7003,7 +7129,7 @@
 				)
 			)
 		)
-		(property "Value" "W25Q128_Breakout"
+		(property "Value" "W25Q128 Breakout"
 			(at -0.762 11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7013,7 +7139,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:W25Q128"
 			(at 1.27 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7024,7 +7150,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.winbond.com/resource-files/w25q128fv_rev.m_05132016_kms.pdf"
 			(at 1.27 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7035,7 +7161,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "W25Q128 128 Mbit SPI NOR flash breakout"
 			(at 1.27 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7044,6 +7170,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "W25Q128_Breakout_0_0"
@@ -7207,7 +7342,7 @@
 				)
 			)
 		)
-		(property "Value" "kx13x_breakout"
+		(property "Value" "KX134 Breakout"
 			(at 5.588 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7217,7 +7352,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:KX134"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7228,7 +7363,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://learn.sparkfun.com/tutorials/qwiic-kx13x-accelerometer-hookup-guide"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7239,7 +7374,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "KX13x high-g accelerometer breakout"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7248,6 +7383,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "kx13x_0_0"
@@ -7501,7 +7645,7 @@
 				)
 			)
 		)
-		(property "Value" "kx13x_Breakout"
+		(property "Value" "KX134 Breakout"
 			(at 5.588 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7511,7 +7655,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:KX134"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7522,7 +7666,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://learn.sparkfun.com/tutorials/qwiic-kx13x-accelerometer-hookup-guide"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7533,7 +7677,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "KX13x high-g accelerometer breakout"
 			(at -21.59 12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7542,6 +7686,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "kx13x_Breakout_0_0"
@@ -7739,7 +7892,7 @@
 				)
 			)
 		)
-		(property "Value" "lis2mdl"
+		(property "Value" "LIS2MDLTR"
 			(at 5.334 11.176 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7749,7 +7902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:LIS2MDL"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7760,7 +7913,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/en/mems-and-sensors/lis2mdl.html"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lis2mdl.pdf"
 			(at 0.762 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7771,7 +7924,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ST LIS2MDL three-axis digital magnetometer"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7780,6 +7933,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C919695"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "lis2mdl_0_0"
@@ -8033,7 +8195,7 @@
 				)
 			)
 		)
-		(property "Value" "lsm6dso"
+		(property "Value" "LSM6DSOTR"
 			(at 5.08 12.192 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8043,7 +8205,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:LSM6DSO"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8054,7 +8216,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/en/mems-and-sensors/lsm6dso.html"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dso.pdf"
 			(at 0.508 0.254 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8065,7 +8227,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ST LSM6DSO six-axis accelerometer and gyroscope IMU"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8074,6 +8236,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C2655100"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "lsm6dso_0_0"
@@ -8363,7 +8534,7 @@
 				)
 			)
 		)
-		(property "Value" "LSM9DS1"
+		(property "Value" "LSM9DS1TR"
 			(at 14.732 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8373,7 +8544,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:PQFN24P43_350X300X102L35X23N"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8384,7 +8555,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://learn.adafruit.com/adafruit-lsm9ds1-accelerometer-plus-gyro-plus-magnetometer-9-dof-breakout"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm9ds1.pdf"
 			(at -11.43 1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8395,7 +8566,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ST LSM9DS1 nine-axis accelerometer, gyroscope and magnetometer IMU"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8404,6 +8575,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" "C2655096"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "lsm9ds1_0_0"
@@ -8873,7 +9053,7 @@
 				)
 			)
 		)
-		(property "Value" "LSM9DS1"
+		(property "Value" "LSM9DS1 Breakout"
 			(at 14.732 -1.524 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8883,7 +9063,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:LSM9DS1"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8905,7 +9085,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LSM9DS1 nine-axis IMU breakout"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8914,6 +9094,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "lsm9ds1_Breakout_0_0"
@@ -9383,7 +9572,7 @@
 				)
 			)
 		)
-		(property "Value" "NEOPXL"
+		(property "Value" "NeoPixel Stick 8"
 			(at 1.016 5.842 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9393,7 +9582,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Avionics_Feet:NeoPixel_Stick_8"
 			(at -20.32 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9404,7 +9593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://learn.adafruit.com/adafruit-neopixel-uberguide"
 			(at -20.32 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9415,7 +9604,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Eight-pixel WS2812-compatible RGB LED stick"
 			(at -20.32 8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9424,6 +9613,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(symbol "neopixel_0_0"
