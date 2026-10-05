@@ -12,6 +12,18 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SYMBOLS = os.path.join(ROOT, "Avionics_Symbols.kicad_sym")
 FOOTPRINTS = os.path.join(ROOT, "Avionics_Feet.pretty")
 MODELS = os.path.join(ROOT, "Models")
+REQUIRED_PROPERTIES = (
+    "Reference", "Value", "Footprint", "Datasheet", "Description",
+)
+LCSC_OPTIONAL_SYMBOLS = {
+    "SMT32F411_Blackpill",
+    "kx13x",
+    "neopixel",
+}
+
+
+def lcsc_is_optional(name):
+    return "Breakout" in name or name in LCSC_OPTIONAL_SYMBOLS
 
 
 def footprint_name(text):
@@ -58,10 +70,21 @@ def validate():
 
     for name in order:
         try:
-            reference = component.props(symbols[name]).get("Footprint", "")
+            properties = component.props(symbols[name])
         except (component.ValidationError, merge.MergeError) as exc:
             errors.append(f"symbol {name}: {exc}")
             continue
+        for key in REQUIRED_PROPERTIES:
+            if not properties.get(key, "").strip():
+                errors.append(f"symbol {name}: missing {key!r} property")
+        if "LCSC Part #" not in properties:
+            errors.append(f"symbol {name}: missing 'LCSC Part #' property")
+        lcsc = properties.get("LCSC Part #", "").strip()
+        if not lcsc and not lcsc_is_optional(name):
+            errors.append(f"symbol {name}: missing 'LCSC Part #' property")
+        elif lcsc and not component.LCSC_RE.fullmatch(lcsc):
+            errors.append(f"symbol {name}: invalid LCSC Part # {lcsc!r}")
+        reference = properties.get("Footprint", "")
         if not reference:
             continue
         if not reference.startswith("Avionics_Feet:"):

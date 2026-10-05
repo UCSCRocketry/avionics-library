@@ -134,8 +134,16 @@ python3 tools/validate_library.py
 
 GitHub Actions runs both commands for pushes and pull requests. The validator
 checks symbol-library structure and uniqueness, footprint syntax and names,
-and symbol-to-footprint references. Legacy external footprint references and
-unlinked existing models are reported as warnings.
+symbol-to-footprint references, and required metadata. Every symbol must have
+`Reference`, `Value`, `Footprint`, `Datasheet`, and `Description` values.
+Purchasable components must also have a valid `LCSC Part #`; breakout modules
+and assembled development boards may leave that property empty. Legacy
+external footprint references and unlinked existing models are reported as
+warnings.
+
+The `SA818S` land pattern was adapted from the JLCEDA/EasyEDA Official Library
+entry for C51897911, with manufacturer dimensions checked against the NiceRF
+datasheet. Source libraries: https://lceda.cn/ and https://easyeda.com.
 
 ## Contribution workflow
 
