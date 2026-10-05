@@ -145,6 +145,9 @@ The `SA818S` land pattern was adapted from the JLCEDA/EasyEDA Official Library
 entry for C51897911, with manufacturer dimensions checked against the NiceRF
 datasheet. Source libraries: https://lceda.cn/ and https://easyeda.com.
 
+The `LGA-12_2x2mm_P0.5mm` footprint and STEP model are sourced from KiCad's
+official footprint and 3D-model libraries under CC BY-SA 4.0.
+
 ## Contribution workflow
 
 `avionics-library` is the canonical source for shared symbols, footprints, and
