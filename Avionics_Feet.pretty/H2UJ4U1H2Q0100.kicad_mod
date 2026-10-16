@@ -3,10 +3,10 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "Unictron CB501F 5.0 x 3.0 x 0.5 mm GNSS ceramic chip antenna. Land pattern from JLCEDA/EasyEDA Official Library (https://lceda.cn/, https://easyeda.com/) and checked against the Unictron datasheet.")
+	(descr "Unictron CB501F 5.0 x 3.0 x 0.5 mm GNSS ceramic chip antenna. Includes the datasheet 15 x 10 mm minimum RF clearance and PCB-edge position. Land pattern from JLCEDA/EasyEDA Official Library (https://lceda.cn/, https://easyeda.com/) and checked against the Unictron datasheet.")
 	(tags "GNSS GPS GLONASS Galileo BeiDou ceramic chip antenna")
 	(property "Reference" "REF**"
-		(at 0 -2.5 0)
+		(at 0 2.5 0)
 		(layer "F.SilkS")
 		(effects
 			(font
@@ -74,6 +74,39 @@
 		(fill none)
 		(layer "F.CrtYd")
 	)
+	(fp_rect
+		(start -9.64 -2.29)
+		(end 5.36 7.71)
+		(stroke (width 0.1) (type dash))
+		(fill none)
+		(layer "Dwgs.User")
+	)
+	(fp_line
+		(start -9.64 -2.29)
+		(end 5.36 -2.29)
+		(stroke (width 0.3) (type solid))
+		(layer "Dwgs.User")
+	)
+	(fp_text user "PCB EDGE — ALIGN BOARD OUTLINE"
+		(at -2.14 -2.79 0)
+		(layer "Dwgs.User")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "MINIMUM RF CLEARANCE 15 x 10 mm"
+		(at -2.14 8.21 0)
+		(layer "Dwgs.User")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
 	(fp_poly
 		(pts
 			(xy -2.5 -1.1)
@@ -110,6 +143,40 @@
 		(at 0 0)
 		(size 0.7 3)
 		(layers "F.Cu" "F.Paste" "F.Mask")
+	)
+	(zone
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu" "In7.Cu"
+			"In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu"
+			"In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu" "In23.Cu"
+			"In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu" "In30.Cu"
+		)
+		(uuid "c6569550-0000-4000-8000-000000000001")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -9.64 -2.29) (xy 5.36 -2.29) (xy 5.36 7.71) (xy -9.64 7.71)
+			)
+		)
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/RF_Antenna.3dshapes/AVX_M620720.step"
