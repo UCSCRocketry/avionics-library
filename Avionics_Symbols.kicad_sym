@@ -2732,7 +2732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Avionics_Feet:XDCR_MS561101BA03-50"
+		(property "Footprint" "Avionics_Feet:MS561101BA03-50"
 			(at 3.81 -16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3253,9 +3253,8 @@
 		)
 		(symbol "Micro_SD_Card_1_0"
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -3263,7 +3262,7 @@
 						)
 					)
 				)
-				(number "SHIELD"
+				(number "SH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3272,9 +3271,8 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -3282,7 +3280,7 @@
 						)
 					)
 				)
-				(number "SHIELD"
+				(number "SH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3291,9 +3289,8 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -3301,7 +3298,7 @@
 						)
 					)
 				)
-				(number "SHIELD"
+				(number "SH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3310,9 +3307,8 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
-				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -3320,7 +3316,7 @@
 						)
 					)
 				)
-				(number "SHIELD"
+				(number "SH"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3331,8 +3327,8 @@
 		)
 		(symbol "Micro_SD_Card_1_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 8.89 -7.62)
+				(start -7.62 7.62)
+				(end 7.62 -15.24)
 				(stroke
 					(width 0)
 					(type solid)
@@ -3342,7 +3338,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 11.43 -2.54 180)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "DAT2"
 					(effects
@@ -3360,7 +3356,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "DAT3/CS"
 					(effects
@@ -3378,7 +3374,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "CMD/MOSI"
 					(effects
@@ -3396,7 +3392,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 5.08 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -3414,7 +3410,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -10.16 -10.16 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -3432,7 +3428,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -5.08 180)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -3450,7 +3446,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 -2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "DAT0/MISO"
 					(effects
@@ -3468,7 +3464,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 11.43 0 180)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "DAT1"
 					(effects
@@ -8952,6 +8948,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C579466"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "ADI 3-axis accelerometer high-g I2C SPI MEMS"
 			(at 0 0 0)
 			(show_name no)
@@ -8974,15 +8981,6 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C579466"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(symbol "ADXL375BCCZ_0_1"
 			(rectangle
 				(start -10.16 10.16)
@@ -8998,9 +8996,9 @@
 		)
 		(symbol "ADXL375BCCZ_1_1"
 			(pin power_in line
-				(at 5.08 12.7 270)
+				(at -12.7 5.08 0)
 				(length 2.54)
-				(name "Vdd_I/O"
+				(name "VDDIO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9016,7 +9014,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -9033,9 +9031,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -5.08 12.7 270)
+			(pin no_connect line
+				(at 12.7 -2.54 180)
 				(length 2.54)
+				(hide yes)
 				(name "RESERVED"
 					(effects
 						(font
@@ -9052,7 +9051,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -9071,7 +9070,7 @@
 				)
 			)
 			(pin passive line
-				(at 0 -12.7 90)
+				(at 12.7 -7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -9090,9 +9089,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at -12.7 7.62 0)
 				(length 2.54)
-				(name "Vs"
+				(name "VS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9108,7 +9107,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -5.08 0)
+				(at -12.7 -7.62 0)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -9126,7 +9125,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 12.7 5.08 180)
 				(length 2.54)
 				(name "INT1"
 					(effects
@@ -9144,7 +9143,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 12.7 2.54 180)
 				(length 2.54)
 				(name "INT2"
 					(effects
@@ -9162,7 +9161,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -5.08 -10.16 90)
+				(at 12.7 -2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9180,9 +9179,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 5.08 -12.7 90)
+			(pin no_connect line
+				(at 12.7 -2.54 180)
 				(length 2.54)
+				(hide yes)
 				(name "RESERVED"
 					(effects
 						(font
@@ -9199,7 +9199,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 2.54 0)
+				(at -12.7 0 0)
 				(length 2.54)
 				(name "SDO/ADDR"
 					(effects
@@ -9217,7 +9217,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 0 0)
+				(at -12.7 -2.54 0)
 				(length 2.54)
 				(name "SDA/SDI/SDIO"
 					(effects
@@ -9235,7 +9235,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -12.7 -5.08 0)
 				(length 2.54)
 				(name "SCL/SCLK"
 					(effects
@@ -10934,6 +10934,439 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MAX-M10S"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -10.16 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MAX-M10S"
+			(at 11.43 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Avionics_Feet:ublox_MAX"
+			(at 10.16 -16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://content.u-blox.com/sites/default/files/MAX-M10S_DataSheet_UBX-20035208.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "u-blox MAX-M10S-00B standard-precision GNSS module, 18-pin LCC, 9.7 x 10.1 mm"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "ublox GPS GNSS module"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "ublox?MAX*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C4153167"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MAX-M10S_0_1"
+			(rectangle
+				(start 12.7 15.24)
+				(end -12.7 -15.24)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MAX-M10S_1_1"
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "TXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "RXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 -7.62 180)
+				(length 2.54)
+				(name "TIMEPULSE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -5.08 0)
+				(length 2.54)
+				(name "EXTINT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "V_BCKP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 17.78 270)
+				(length 2.54)
+				(name "VCC_IO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -5.08 17.78 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "RF_IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "LNA_EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 5.08 17.78 270)
+				(length 2.54)
+				(name "VCC_RF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -12.7 0)
+				(length 2.54)
+				(name "VIO_SEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 0 0)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -7.62 0)
+				(length 2.54)
+				(name "~{SAFEBOOT}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)

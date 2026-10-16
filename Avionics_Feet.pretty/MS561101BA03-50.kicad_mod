@@ -1,11 +1,11 @@
 
-(module XDCR_MS561101BA03-50 (layer F.Cu) (tedit 69850F0A)
+(module MS561101BA03-50 (layer F.Cu) (tedit 69850F0A)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at 0.132 -3.5564 0) (layer F.SilkS)
     (effects (font (size 0.64 0.64) (thickness 0.15)))
   )
-  (fp_text value XDCR_MS561101BA03-50 (at 6.228 3.4564 0) (layer F.Fab)
+  (fp_text value MS561101BA03-50 (at 6.228 3.4564 0) (layer F.Fab)
     (effects (font (size 0.64 0.64) (thickness 0.15)))
   )
   (pad 1 smd rect (at -1.1 -1.875) (size 1.1 0.6) (layers F.Cu F.Mask F.Paste) (solder_mask_margin 0.102))
@@ -98,4 +98,9 @@
   (fp_line (start 1.9 -2.75) (end -1.9 -2.75) (layer F.CrtYd) (width 0.05))
   (fp_circle (center -2.65 -1.875) (end -2.55 -1.875) (layer F.SilkS) (width 0.2))
   (fp_circle (center -2.65 -1.875) (end -2.55 -1.875) (layer F.Fab) (width 0.2))
+  (model "${KICAD10_3DMODEL_DIR}/Package_LGA.3dshapes/LGA-8_3x5mm_P1.25mm.step"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
