@@ -144,7 +144,9 @@ warnings.
 The `SA818S` land pattern was adapted from the JLCEDA/EasyEDA Official Library
 entry for C51897911, with manufacturer dimensions checked against the NiceRF
 datasheet. The `H2UJ4U1H2Q0100` land pattern was adapted from the same official
-library's C6569550 entry and checked against the Unictron CB501F datasheet.
+library's C6569550 entry and checked against the Unictron CB501F datasheet. The
+`MLT-5020` symbol, land pattern, and 3D model were adapted from the same official
+library's C94598 entry and checked against the HNDZ datasheet.
 Source libraries: https://lceda.cn/ and https://easyeda.com.
 
 ## Contribution workflow
