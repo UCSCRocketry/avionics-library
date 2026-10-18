@@ -149,6 +149,10 @@ library's C6569550 entry and checked against the Unictron CB501F datasheet. The
 library's C94598 entry and checked against the HNDZ datasheet.
 Source libraries: https://lceda.cn/ and https://easyeda.com.
 
+The `AO3400A` and `1N5819WS` symbol graphics are adapted from the official
+KiCad symbol libraries; they retain references to KiCad's standard SOT-23 and
+SOD-323 footprints. Source library: https://gitlab.com/kicad/libraries/kicad-symbols.
+
 ## Contribution workflow
 
 `avionics-library` is the canonical source for shared symbols, footprints, and
