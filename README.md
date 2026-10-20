@@ -146,7 +146,10 @@ entry for C51897911, with manufacturer dimensions checked against the NiceRF
 datasheet. The `H2UJ4U1H2Q0100` land pattern was adapted from the same official
 library's C6569550 entry and checked against the Unictron CB501F datasheet. The
 `MLT-5020` symbol, land pattern, and 3D model were adapted from the same official
-library's C94598 entry and checked against the HNDZ datasheet.
+library's C94598 entry and checked against the HNDZ datasheet. The
+`E22-400M22S` symbol and 3D model were adapted from the same official library's
+C411291 entry; its land pattern and pinout were checked against the Ebyte
+datasheet and the reviewed upstream KiCad footprint.
 Source libraries: https://lceda.cn/ and https://easyeda.com.
 
 The `AO3400A` and `1N5819WS` symbol graphics are adapted from the official
