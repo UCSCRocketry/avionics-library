@@ -11758,7 +11758,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "TMPm_121"
+	(symbol "TMP121"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -11774,7 +11774,8 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "LCSC Part #" "C0000000" (at 0 0 0) (effects (font (size 1.27 1.27)) (hide yes)))
+		(property "Value" "TMP121"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11784,18 +11785,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11806,7 +11796,18 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp121.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TMP121 SPI digital temperature sensor"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
