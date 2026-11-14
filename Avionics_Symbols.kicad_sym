@@ -10033,7 +10033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Avionics_Feet:STM32H562RGT6"
+		(property "Footprint" "Avionics_Feet:STM32H562_Breakout"
 			(at 7.366 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
