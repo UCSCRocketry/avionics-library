@@ -10034,7 +10034,7 @@
 			)
 		)
 		(property "Footprint" "Avionics_Feet:STM32H562_Breakout"
-			(at 35.56 48.768 0)
+			(at 26.416 46.736 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -10045,7 +10045,7 @@
 				(justify right)
 			)
 		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32h562rg.pdf"
+		(property "Datasheet" ""
 			(at 25.908 49.022 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10056,19 +10056,8 @@
 				)
 			)
 		)
-		(property "Description" "STMicroelectronics STM32H562RGT6 Arm Cortex-M33 MCU, 1 MB flash, 640 KB RAM, 250 MHz, LQFP-64"
-			(at 11.938 48.768 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C19711662"
-			(at 10.414 48.768 0)
+		(property "Description" "STM32H562 WeActStudio Devboard"
+			(at 9.144 48.768 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -10160,7 +10149,7 @@
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10178,7 +10167,7 @@
 						)
 					)
 				)
-				(number "3"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10196,7 +10185,7 @@
 						)
 					)
 				)
-				(number "4"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10214,7 +10203,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10232,7 +10221,7 @@
 						)
 					)
 				)
-				(number "6"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10250,7 +10239,7 @@
 						)
 					)
 				)
-				(number "7"
+				(number "8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10268,7 +10257,7 @@
 						)
 					)
 				)
-				(number "8"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10286,7 +10275,7 @@
 						)
 					)
 				)
-				(number "9"
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10304,7 +10293,7 @@
 						)
 					)
 				)
-				(number "10"
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10322,7 +10311,7 @@
 						)
 					)
 				)
-				(number "11"
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10340,7 +10329,7 @@
 						)
 					)
 				)
-				(number "12"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10358,7 +10347,7 @@
 						)
 					)
 				)
-				(number "13"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10376,7 +10365,7 @@
 						)
 					)
 				)
-				(number "14"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10394,7 +10383,7 @@
 						)
 					)
 				)
-				(number "15"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
